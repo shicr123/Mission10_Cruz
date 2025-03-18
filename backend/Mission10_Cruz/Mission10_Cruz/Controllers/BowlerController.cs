@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Mission10_Cruz.Data;
+using Mission10_Cruz.Models;
 
 namespace Mission10_Cruz.Controllers
 {
@@ -9,15 +10,15 @@ namespace Mission10_Cruz.Controllers
     [ApiController]
     public class BowlerCrewController : ControllerBase
     {
-        private BowlerContext _bowlerContext;
+        private BowlingLeagueContext _bowlerContext;
 
-        public BowlerCrewController(BowlerContext temp) 
+        public BowlerCrewController(BowlingLeagueContext temp) 
         { 
             _bowlerContext = temp;
         }
 
         [HttpGet(Name = "GetBowlingCrew")]
-        public IEnumerable<BowlingCrew> Get()
+        public IEnumerable<Bowler> Get()
         {
             // This is the informatoion about the bowlers 
             var bowlerList = _bowlerContext.Bowlers

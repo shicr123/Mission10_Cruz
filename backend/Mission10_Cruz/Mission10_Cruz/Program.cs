@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Mission10_Cruz;
+using Mission10_Cruz.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,8 +11,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// builder.Services.AddDbContext<BowlerDbContext>(options =>
-//     options.UseSqlite(builder.Configuration.GetConnectionString("BowlerConnection")));
+
+builder.Services.AddDbContext<BowlingLeagueContext>(options =>
+     options.UseSqlite(builder.Configuration.GetConnectionString("BowlerConnection")));
+
+builder.Services.AddCors();
 
 var app = builder.Build();
 
