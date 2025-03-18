@@ -8,10 +8,10 @@ namespace Mission10_Cruz.Data
         { 
         }
 
-        // for BowlingCrew
+        // information for bowlers
         public DbSet<BowlingCrew> Bowlers { get; set; }
 
-        // for Team 
+        // information for the team 
         public DbSet<Team> Teams { get; set; }
     }
 }

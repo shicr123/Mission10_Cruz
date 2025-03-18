@@ -5,6 +5,7 @@ namespace Mission10_Cruz.Data
 {
     public class BowlingCrew
     {
+        // information for all the bowling crew
         [Key]
         public int BowlerId { get; set; }
         [Required]
@@ -26,13 +27,13 @@ namespace Mission10_Cruz.Data
         public string? BowlerPhoneNumber { get; set; }
 
 
-        // Foreign Key for Team (no need for [Required] unless it's mandatory)
+        // Foreign Key for the team
         [ForeignKey("Team")]
         public int TeamId { get; set; }
 
         [Required]
 
-        // Navigation property to the Team model
+    
         public Team? Team { get; set; }
     }
 }

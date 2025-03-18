@@ -19,7 +19,7 @@ namespace Mission10_Cruz.Controllers
         [HttpGet(Name = "GetBowlingCrew")]
         public IEnumerable<BowlingCrew> Get()
         {
-            // Query the bowlers and include the related team
+            // This is the informatoion about the bowlers 
             var bowlerList = _bowlerContext.Bowlers
                 .Include(b => b.Team)
                 .Where(b => b.Team != null && (b.Team.TeamName == "Marlins" || b.Team.TeamName == "Sharks"))  // Null check for Team
