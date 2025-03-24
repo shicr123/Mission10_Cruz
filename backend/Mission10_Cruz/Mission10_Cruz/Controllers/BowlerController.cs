@@ -6,6 +6,7 @@ using Mission10_Cruz.Models;
 
 namespace Mission10_Cruz.Controllers
 {
+    // this is the name I'll need to remember to look on the website and see if there's json information 
     [Route("api/[controller]")]
     [ApiController]
     public class BowlerCrewController : ControllerBase

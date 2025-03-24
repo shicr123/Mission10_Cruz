@@ -12,6 +12,9 @@ function BowlerList() {
 
   fetchCrew();
 
+  // information about all the data 
+  // this is where I am joining all the tables 
+
   return (
     <>
       <h1>Bowler Crew</h1>
@@ -30,6 +33,7 @@ function BowlerList() {
           </tr>
         </thead>
         <tbody>
+    
           {crews.map((b) => (
             <tr key={b.bowlerId}>
               <td>{b.bowlerFirstName}</td>
