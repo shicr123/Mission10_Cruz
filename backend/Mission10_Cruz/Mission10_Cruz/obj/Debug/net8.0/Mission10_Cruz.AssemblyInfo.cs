@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission10_Cruz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52a842d9d92386fbf926752d886bb062166868da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f8924b9d6dded2d419781d4959f874882659c77")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission10_Cruz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission10_Cruz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

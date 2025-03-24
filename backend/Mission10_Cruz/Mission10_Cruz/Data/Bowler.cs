@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Mission10_Cruz.Models;
 
-public partial class Bowler
+public class Bowler
 {
+    [Required]
     public int BowlerId { get; set; }
 
     public string? BowlerLastName { get; set; }
@@ -24,8 +26,7 @@ public partial class Bowler
     public string? BowlerPhoneNumber { get; set; }
 
     public int? TeamId { get; set; }
-
-    public virtual ICollection<BowlerScore> BowlerScores { get; set; } = new List<BowlerScore>();
+    
 
     public virtual Team? Team { get; set; }
 }
