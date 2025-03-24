@@ -44,7 +44,6 @@ public partial class BowlingLeagueContext : DbContext
                 .HasColumnType("INT")
                 .HasColumnName("TeamID");
 
-            entity.HasOne(d => d.Team).WithMany(p => p.Bowlers).HasForeignKey(d => d.TeamId);
         });
 
         modelBuilder.Entity<Team>(entity =>
